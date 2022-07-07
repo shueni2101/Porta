@@ -1,0 +1,13 @@
+{
+    "header":{
+        "1-line":"Mi nombre es Lautaro soy originario de Buenos Aires-Argentina pero también soy parte italiano.",
+        "2-line":"Actualmente vivo en el Reino Unido desde 2020 después de vivir en España durante casi 3 años..",
+        "3-line":"Mis hobbies son ir al gimnasio, ver muchas series y sentarme horas programando y descubriendo cosas nuevas!",
+        "4-line":"Toda mi vida me ha encantado el mundo IT pero nunca supe en qué área trabajar.",
+        "5-line":"gracias a la búsqueda encontré este maravilloso mundo del Front-End donde puedo ser creativo y lógico al mismo tiempo.",
+        "6-line":"Después de estudiar y practicar muchas horas estoy listo para mi primera experiencia."
+    },
+    "title":{
+        "title":"Acerca de mi"
+    }
+}

@@ -1,0 +1,775 @@
+.containterPadre{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.container{
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.hijoUno{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imagenLautaro{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+.imagen{
+ width: 21%;
+ height: 90%;
+  border-radius: 80px;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.imagenLautaro img:hover{
+  filter:grayscale(0)
+ }
+ .Title{
+  display: flex;
+  flex-direction: column;
+ }
+ .aboutMeTitle{
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  top:20%;
+  right: 40%;
+  color:  white;
+  letter-spacing: 2px;
+}
+.box{
+  top: 25%;
+  position: absolute;
+  display: flex;
+  justify-content:center;
+  background-color: transparent;
+}
+.icono{
+  display: flex;
+  color: transparent;
+  animation: hidde 5s;
+}
+@keyframes hidde{
+  0%{
+  color: deepskyblue;  
+  }
+  50%{
+  color: deepskyblue;  
+  }
+  75%{
+  color: deepskyblue;  
+  }
+  100%{
+    color: transparent;
+  }
+}
+.hijoDos{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin-top: 25%;
+}
+.butonLanguage{
+  position: absolute;
+  top:25%;
+  bottom: auto;
+  right: 5%;
+  left: auto;
+}
+.button{
+  height: 3rem;
+  width: 9rem;
+  margin: 20px;
+  border: 3px solid deepskyblue;
+  background-color: transparent;
+  color:#fff;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+.button::before, 
+.button::after{
+  content:"";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: 0.5s ease;
+}
+.button::before{
+  left: -15px;
+  top: -15px;
+  border-width: 3px 0px 0px 3px;
+}
+.button::after{
+  right: -15px;
+  bottom: -15px;
+  border-width: 0px 3px 3px 0px;
+}
+.button:hover::after, 
+.button:hover::before{
+width: calc(100% + 30px);
+height: calc(100% + 30px);
+}
+.englishPresentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 2.6vh;
+}
+.englishPresentation  spam {
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+}
+.spam1{
+  width: 94ch;
+  animation: typing 12s steps(120),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  white-space: nowrap;
+  border-right: 3px solid;
+  animation-delay: 1s;
+  color: transparent;
+}
+.spam2{
+  width: 93ch;
+  animation: typing 12s steps(120),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  border-right: 3px solid;
+  white-space: nowrap;
+  animation-delay: 16s;
+  color: transparent;
+}
+.spam3{
+  width: 120ch;
+  animation: typing 12s steps(120),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  animation-delay: 30s;
+  border-right: 3px solid;
+  white-space: nowrap;
+  color: transparent;
+
+}
+.spam4{
+  width: 77ch;
+  animation: typing 12s steps(120),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  animation-delay: 46s;
+  color: transparent;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+.spam5{
+  width: 121ch;
+  animation: typing 18s steps(170),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  animation-delay: 60.5s;
+  color: transparent;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+.spam6{
+  width: 90ch;
+  animation: typing 14s steps(170),
+  blink .5s step-end infinite alternate,
+  ocultar 10s step-end infinite alternate;
+  color: transparent;
+  animation-delay: 77s;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+}
+@keyframes blink{
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes ocultar{
+  from{
+    color: black;
+  }
+}
+  /*styles with movements*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.containerPresentation{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+}
+.containerPresentation p::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+    -90deg,
+    #717dc8,
+    #014a3e,
+    #3c0e54
+  );
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+.containerPresentation p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.containerPresentation p:nth-of-type(1)::before,
+.containerPresentation p:nth-of-type(1)::after{
+    animation-delay: 1.5s;
+}
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.container2 h3{
+color:  rgb(108, 83, 83);
+font-size: 3vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 1px;
+margin-bottom: 2%;
+}
+.box2{
+  background-color: transparent;
+  transition: ease-in-out;
+}
+.box2 :nth-child(n) {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 5vh;
+  color: wheat;
+}
+.icono1 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 3s;
+
+}
+.icono2{
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 4s;
+
+}
+.icono3{
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 5s;
+
+}
+.icono4 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 6s;
+
+}
+.icono5 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 7s;
+
+}
+.icono6 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 8s;
+}
+.icono7 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay: 9s;
+
+}
+.icono8 {
+  animation: float 5s ease-in-out infinite;
+  animation-delay:10s;
+
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.containerPresentationResponsive{
+  visibility: hidden;
+}
+
+@media (min-width:551px) and (max-width:1300px)
+  { 
+.hijoUno{
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+.imagenLautaro{
+  position:static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.imagen{
+  position:static;
+ width: 25vh;
+ height: 25vh;
+  border-radius: 2000px;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+ .Title{
+  display: flex;
+  position:static;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+ }
+ .aboutMeTitle{
+  position:static;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  font-weight: bold;
+  font-size: 40px;
+  color:  rgb(108, 83, 83);
+  letter-spacing: 2px;
+}
+.box{
+  position:static;
+
+display: none;
+}
+.icono{
+  position:static;
+
+  display: none;
+}
+  .hijoDos{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+.containerPresentation{
+display:none;
+}
+.containerPresentationResponsive{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2% 0px 4% 0px;
+  padding: 0px;
+  color: white;
+  font-size: 100%;
+  text-align: center;
+  align-items: center;
+  visibility: visible;
+  width: 90%;
+}
+.butonLanguage{
+  position: static;
+  margin: 5% 0px 5% 0px;
+  padding: 0px;
+}
+.button{
+  height: 3rem;
+  width: 9rem;
+  margin: 0px 1rem 0px 1rem;
+  border: 3px solid deepskyblue;
+  background-color: transparent;
+  color:#fff;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+.container2{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 h3{
+  display: flex;
+  justify-content: center;
+color:  rgb(108, 83, 83);
+font-size: 30px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 2px;
+}
+.box2{
+  display: flex;
+  margin-top: 5%;
+  background-color: transparent;
+  transition: ease-in-out;
+}
+.box2 :nth-child(n) {
+  margin-top: 0px;
+  display: inline-block;
+  font-size: 3vh;
+  color: wheat;
+  }
+}
+@media (min-width:300px) and (max-width:550px)
+{
+  .containerPadre{
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+.hijoUno{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.imagenLautaro{
+position:static;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.imagen{
+position:static;
+width: 20vh;
+height: 20vh;
+border-radius: 2000px;
+filter: grayscale(100%);
+transition: filter 0.5s;
+}
+.Title{
+display: flex;
+position:static;
+flex-direction: row;
+justify-content: center;
+margin-top: 0%;
+margin-bottom: 5%;
+}
+.aboutMeTitle{
+margin-top: 5%;
+position:static;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+align-items: center;
+font-weight: bold;
+font-size: 30px;
+color:  rgb(108, 83, 83);
+letter-spacing: 2px;
+}
+.box{
+display: none;
+}
+.icono{
+display: none;
+}
+.hijoDos{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.containerPresentation{
+display:none;
+}
+.containerPresentationResponsive{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 0% 0px 0% 0px;
+padding: 0px;
+color: white;
+font-size: 80%;
+text-align: center;
+align-items: center;
+visibility: visible;
+width: 90%;
+margin-bottom: 4%;
+}
+.butonLanguage{
+position: static;
+margin: 0% 0px 4% 0px;
+padding: 0px;
+}
+.button{
+height: 2rem;
+width: 6rem;
+margin: 0px 0rem 0rem 2rem;
+border: 3px solid deepskyblue;
+background-color: transparent;
+color:#fff;
+font-weight: bold;
+position: relative;
+cursor: pointer;
+}
+
+.container2{
+margin-top: 2%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.container2 h3{
+display: flex;
+justify-content: center;
+color:  rgb(108, 83, 83);
+font-size: 100%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 2px;
+margin-top: 2vh;
+
+}
+.box2{
+display: flex;
+margin-top: 4vh;
+background-color: transparent;
+transition: ease-in-out;
+}
+.box2 :nth-child(n) {
+margin-top: 0px;
+display: inline-block;
+font-size: 4vh;
+color: wheat;
+}
+}
+@media (min-width:150px) and (max-width:290px){
+  .containerPadre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    box-sizing: border-box;
+  }
+
+.hijoUno{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;
+}
+.imagenLautaro{
+position:static;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+.imagen{
+position:static;
+width: 25vh;
+height: 25vh;
+border-radius: 2000px;
+filter: grayscale(100%);
+transition: filter 0.5s;
+}
+.Title{
+display: flex;
+position:static;
+flex-direction: row;
+justify-content: center;
+margin-top: 10%;
+}
+.aboutMeTitle{
+position:static;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+align-items: center;
+font-weight: bold;
+font-size: 70%;
+color:  rgb(108, 83, 83);
+letter-spacing: 2px;
+}
+.box{
+display: none;
+}
+.icono{
+display: none;
+}
+.hijoDos{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerPresentation{
+display:none;
+}
+.containerPresentationResponsive{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 0% 0px 0% 0px;
+padding: 0px;
+color: white;
+font-size: 60%;
+text-align: center;
+align-items: center;
+visibility: visible;
+width: 100%;
+height: 100%;
+}
+.butonLanguage{
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin: 0% 0px 0% 0px;
+  padding: 0px;
+  }
+  .button{
+  height: 1rem;
+  width: 2rem;
+  font-size: 30%;
+  text-align: center;
+align-items: center;
+  margin: 0px 0rem 0rem 1rem;
+  border: 3px solid deepskyblue;
+  background-color: transparent;
+  color:#fff;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  }
+  
+.button::before, 
+.button::after{
+  content:"";
+  position: static;
+  width: 0px;
+  height: 0px;
+  border: inherit;
+  transition: 0.5s ease;
+}
+.button::before{
+  left: 0px;
+  top: 0px;
+  border-width: 0px 0px 0px 0px;
+}
+.button::after{
+  right: 0px;
+  bottom: 0px;
+  border-width: 0px 0px 0px 0px;
+}
+.button:hover::after, 
+.button:hover::before{
+width: 0px;
+height: 0px;
+}
+.container2{
+margin-top: 0%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.container2 h3{
+color: white;
+display: flex;
+justify-content: flex-start;
+font-size: 50%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+letter-spacing: 2px;
+margin-bottom: 0%;
+}
+.box2{
+display: flex;
+margin-top: 5%;
+background-color: transparent;
+transition: ease-in-out;
+}
+.box2 :nth-child(n) {
+margin-top: 0px;
+display: inline-block;
+font-size: 90%;
+color: wheat;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+}

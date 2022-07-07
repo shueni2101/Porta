@@ -1,0 +1,13 @@
+{
+    "header":{
+        "1-line":"My name is Lautaro I am originally from Buenos Aires-Argentina but I am Italian too.",
+        "2-line":"I am currently  living in the UK from 2020 after living in Spain for almost 3 years.",
+        "3-line": "My hobbies are going to the gym , watching a lot of series and sitting for hours programming and discovering new stuff!",
+        "4-line":"All my life I have loved the IT world but I never knew what area to work in.",
+        "5-line":"Thanks to the search I found this wonderful world of the Front-End where I can be creative and logical at the same time.",
+        "6-line":"After studying and practicing many hours I am ready for my first experience."
+    },
+    "title":{
+        "title":"About me"
+    }
+}

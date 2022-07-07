@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.containerSon{
+  display:flex;
+  flex-direction: row;
+  height: 8vh;
+  width: 100%;
+  background-color: #141E30;
+  background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  border-bottom: 1px solid   rgb(108, 83, 83); 
+}
+.header{
+  display: flex;
+}
+.motion{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: 90%;
+  text-align: center;
+  height: 50%;
+  margin-top: 30%;
+  margin-left: 20px;
+  background: rgb(61, 9, 158);
+}
+
+h5{
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: grey;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+h5:hover{
+  color: white;
+  cursor: pointer;
+  }
+  .TitleResponsive{
+    visibility: hidden;
+  }
+.main{
+  display: inline-block;
+  height: 20px;
+  width: 100%;
+
+}
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 60%;
+}
+.nav ul li {
+  display: flex;
+font-size: 15px;
+}
+.navLink{
+  font-size: 2vh;
+  font-weight:bolder;
+  text-decoration: none;
+  color: grey;
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  transition: 0.3s;
+}
+.navLink:hover{
+  font-size: 16.5px;
+  color: white;
+}
+.icon{
+  font-size: 2vh;
+  display: flex;
+  color: white;
+  margin-left: 4px;
+  margin-top: 3px;
+  transition: 0.4s;
+}
+.ocultar{
+ visibility: hidden;
+}
+
+@media  (min-width:801px) and (max-width:1400px){
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+  }
+  .motion{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background-color: #CA391A;
+  }
+  h5{
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 2em;
+    margin-left: 1px;
+    margin-top: 10px;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: rgb(62, 59, 59);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+  }
+  .main{
+    display: inline-block;
+    height:10%;
+    width: 100%;
+    margin-left: 5em;
+  }
+
+  .nav ul {
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 2%;
+  }
+  .nav ul li {
+    display: flex;
+  }
+  .TitleResponsive{
+    visibility: hidden;
+  }
+  .navLink{
+    font-size: 20px;
+    font-weight:bolder;
+    color: gray;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    transition: 0.3s;
+  }
+  .icon{
+    display: flex;
+    color: white;
+    margin-top: 1%;
+    font-size: 15px;
+  }
+}
+@media  (min-width:551px) and (max-width:800px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .containerSon{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+  }
+  .motion{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height:45%;
+    margin-top: 23%;
+    margin-left: 2vh;
+    background: rgb(61, 9, 158);
+  }
+  h5{
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 30%;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4vh;
+    flex-direction: column;
+    color: grey;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+  }
+  .main{
+    display: inline-block;
+    height:10%;
+    width: 100%;
+  }
+  .nav ul {
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2%;
+  margin-right: 1%;
+  }
+  .nav ul li {
+    display: flex;
+  }
+  .TitleResponsive{
+    visibility: hidden;
+  }
+  .navLink{
+    font-size: 100%;
+    font-weight:bolder;
+    color: gray;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    transition: 0.3s;
+  }
+  .icon{
+    display: flex;
+    color: white;
+    font-size: 1.6vh;
+  }
+}
+@media only screen and (min-width:300px) and (max-width:550px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  .containerSon{
+    padding-top: 3%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    height:40%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+  }
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.TitleResponsive{
+  background-color: transparent;
+  font-size: 2em;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+  .motion{
+    display: none;
+  }
+ 
+  .nav ul {
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  
+}
+@media only screen and (min-width:150px) and (max-width:299px)
+{
+  .container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  .containerSon{
+    padding-top: 3%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+    border-bottom: 1px solid   rgb(108, 83, 83); 
+  }
+.header{
+  display: flex;
+  flex-direction: column;
+}
+.TitleResponsive{
+  background-color: transparent;
+  font-size: 100%;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  color: grey;
+}
+  .motion{
+    display: none;
+  }
+ 
+  .nav ul {
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+  
+}
